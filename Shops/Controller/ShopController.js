@@ -25,6 +25,10 @@ const AllShop = async (req,res) =>{
     try {
         console.log(req.body)
         let allshops = await AllShopFn()
+        console.log(allshops)
+        res.json({
+            Allshops :  allshops 
+        })
     } catch (error) {
         
     }
